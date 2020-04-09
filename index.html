@@ -1,76 +1,43 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>王焘的个人网站</title>
-		<style type="text/css">
-			section{
-				min-height: 400px;
-				background-color: azure;
-			}
-		</style>
-	</head>
-	<body>
-		<h1 id="00">王焘的个人网站</h1>
-		<header>
-			<nav>
-					<ul>
-						<li><a href="#01">个人信息</a></li>
-						<ul>
-							<li><a href="#04">照片</a></li>
-							<li><a href="#05">经历</a></li>
-							<li><a href="#10">视频</a></li>
-						</ul>
-						<li><a href="#02">教育信息</a></li>
-						<ul>
-							<li><a href="#06">小学</a></li>
-							<li><a href="#07">初中</a></li>
-							<li><a href="#08">高中</a></li>
-							<li><a href="#09">大学</a></li>
-						</ul>
-						<li><a href="#03">项目经历</a></li>
-					</ul>
-			</nav>
-		</header>
-		<body>
-			<section >
-				<h1 id="01">个人信息</h1>
-				<section>
-					<h3>我的照片</h3>
-					<img src="222.jpg" id="04">
-					<h3 id="05">我的经历</h3>
-					<h3>我最喜欢的视频</h3>
-					<video width="200px" height="400px" controls="controls" id="10">
-						<source src="a29ad60f72eebfcc0528360e34ab52c7.mp4" type="video/mp4"></source>
-					</video>
-				</section>
-				<a href="#00">返回顶部</a>
-			</section>
-			<hr >
-			<section>
-				<h1 id="02">教育信息</h1>
-				<section>
-					<h3 id="06">小学</h3>
-				</section>
-				<section>
-					<h3 id="07">初中</h3>
-				</section>
-				<section>
-					<h3 id="08">高中</h3>
-				</section>
-				<section>
-					<h3 id="09">大学</h3>
-				</section>
-				<a href="#00">返回顶部</a>
-			</section>
-			<hr >
-			<section>
-				<h1 id="03">项目经历</h1>
-				<a href="#00">返回顶部</a>
-			</section>
-		</body>
-		<footer>
-			<p>wangtao</p>
-		</footer>
-	</body>
+		<head>
+				<meta charset="utf-8">
+				<title>基本选择器的使用</title>
+				<style type="text/css">
+					*{
+						margin: 0px;
+						padding: 0px;
+					}
+					.addiv{
+						width: 620px;
+						height: 360px;
+						background-color: #FAEBD7;
+						color: #4C9372;
+						text-align: center;
+						text-indent: -1em;
+					}
+					strong{
+						color: #DAA520;
+					}
+					p{
+						font-size:28px;
+					}
+					#desc{
+						font-size: 11px;
+						text-indent: 0em;
+					}
+					.en{
+						font-family: "blackadder itc";
+					}
+				</style>
+			</head>
+			<body>
+					<div class="addiv">
+						<h1>2020<strong>春装全面上新</strong></h1>
+						<p class="en">Spring is coming!</p>
+						<p>全场两件<strong>包邮</strong></p>
+						<p class="en">Apri 4.1-4.30</p>
+						<p id="desc">所有邂逅相逢，所有萍聚水遇，都在缘分的天空下慢慢演绎……</p>
+					</div>	
+			</body>
 </html>
