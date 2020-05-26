@@ -1,43 +1,54 @@
 <!DOCTYPE html>
 <html>
-		<head>
-				<meta charset="utf-8">
-				<title>基本选择器的使用</title>
-				<style type="text/css">
-					*{
-						margin: 0px;
-						padding: 0px;
-					}
-					.addiv{
-						width: 620px;
-						height: 360px;
-						background-color: #FAEBD7;
-						color: #4C9372;
-						text-align: center;
-						text-indent: -1em;
-					}
-					strong{
-						color: #DAA520;
-					}
-					p{
-						font-size:28px;
-					}
-					#desc{
-						font-size: 11px;
-						text-indent: 0em;
-					}
-					.en{
-						font-family: "blackadder itc";
-					}
-				</style>
-			</head>
-			<body>
-					<div class="addiv">
-						<h1>2020<strong>春装全面上新</strong></h1>
-						<p class="en">Spring is coming!</p>
-						<p>全场两件<strong>包邮</strong></p>
-						<p class="en">Apri 4.1-4.30</p>
-						<p id="desc">所有邂逅相逢，所有萍聚水遇，都在缘分的天空下慢慢演绎……</p>
-					</div>	
-			</body>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.tooltip{
+				position: relative;
+				color: greenyellow;
+			}
+			.tooltip::after{
+				content: attr(title);
+				word-break: keep-all;
+				padding: 2px 16px;
+				background: #000000;
+				color: #fff;
+				position: absolute;
+				left: calc(100%+10px);
+				/* border-radius: 5px; */
+				opacity: 0;
+				transition: all 1.5s;
+				
+			}
+			.tooltip:hover::after{
+				-webkit-transform: translateX(-45px);
+				opacity: 1;
+			}
+			.tooltip1::before {
+				content: attr(title);
+				background: #fff;
+				color: #000000;
+			    width: 0px;
+			    height: 0px;
+			        border-top: 13px solid transparent;
+			        border-right: 16px solid;
+			        border-bottom: 13px solid transparent;
+			        position: absolute;
+					left: calc(249px);
+					opacity:0;
+					transition: all 1.5s;
+					z-index: 12;
+			    }	
+			.tooltip1:hover::before{
+					-webkit-transform: translateX(-45px);
+					opacity: 1;
+			}
+		</style>
+	</head>
+	<body>
+		        
+		        <p class="tooltip1">Java是一名门面向<span title="很重要" class="tooltip">对象对象</span>的语言</p>
+
+	</body>
 </html>
