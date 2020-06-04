@@ -1,54 +1,37 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html >
+<html lang="en">
 	<head>
-		<meta charset="utf-8">
-		<title></title>
-		<style type="text/css">
-			.tooltip{
-				position: relative;
-				color: greenyellow;
-			}
-			.tooltip::after{
-				content: attr(title);
-				word-break: keep-all;
-				padding: 2px 16px;
-				background: #000000;
-				color: #fff;
-				position: absolute;
-				left: calc(100%+10px);
-				/* border-radius: 5px; */
-				opacity: 0;
-				transition: all 1.5s;
-				
-			}
-			.tooltip:hover::after{
-				-webkit-transform: translateX(-45px);
-				opacity: 1;
-			}
-			.tooltip1::before {
-				content: attr(title);
-				background: #fff;
-				color: #000000;
-			    width: 0px;
-			    height: 0px;
-			        border-top: 13px solid transparent;
-			        border-right: 16px solid;
-			        border-bottom: 13px solid transparent;
-			        position: absolute;
-					left: calc(249px);
-					opacity:0;
-					transition: all 1.5s;
-					z-index: 12;
-			    }	
-			.tooltip1:hover::before{
-					-webkit-transform: translateX(-45px);
-					opacity: 1;
-			}
-		</style>
+		<meta charset="UTF-8" >
+		<title>flex</title>
 	</head>
+	<style>
+		.ccc{
+			background-color: #55aaff;
+			margin: 20px;
+			padding: 10px;
+			height: 100;
+			width: 300;
+		}
+		.ccc a{
+			display: inline-block;
+			border: 1px solid transparent;
+			padding: 10px;
+			margin:5px;
+			width: 150px;
+			color: #F4F4F4;
+			text-decoration: none;
+			text-align: center;
+		}
+		.ccc a:hover{
+			background-color: darkcyan;
+		}
+	</style>
 	<body>
-		        
-		        <p class="tooltip1">Java是一名门面向<span title="很重要" class="tooltip">对象对象</span>的语言</p>
-
+		<div class="ccc">
+		<a href="#"><strong>首页</strong></a>
+		<a href="#"><strong>周边游</strong></a>
+		<a href="#"><strong>处境游</strong></a>
+		<a href="#"><strong>独家栏目</strong></a>
+		</div>
 	</body>
-</html>
+<html>
